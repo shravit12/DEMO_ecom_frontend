@@ -13,7 +13,8 @@ export default function HeroSection() {
         playsInline
         preload="auto"
       >
-        <source src="/Shopping.mp4" type="video/mp4" />
+        
+          <source src="/Shopping_V1.mp4" type="video/mp4" />
       </video>
 
       {/* Dark Overlay */}
