@@ -48,7 +48,7 @@ npm install
 npm start
 
 ---
-🙋‍♂️ Author
+## 🙋‍♂️ Author
 
 Shravit
 Full Stack  Developer 🚀
