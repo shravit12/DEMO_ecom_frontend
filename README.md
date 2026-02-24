@@ -1,16 +1,56 @@
-# React + Vite
+# 🛒 Demo E-commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive eCommerce frontend built to showcase clean UI, reusable components, and real-world online store layouts.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://demo-ecom-frontend-mauve.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Clean and modern UI
+- Fully responsive design
+- Product listing layout
+- Reusable components
+- Beginner-friendly structure
+- Deployed on Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- TalwindCSS
+- Vercel (Deployment)
+
+---
+
+
+## 📂 Project Purpose
+
+This project was built to:
+
+- Practice real-world frontend development
+- Learn component-based architecture
+- Build portfolio-ready UI projects
+- Showcase frontend skills to clients and recruiters
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/shravit12/DEMO_ecom_frontend.git
+cd DEMO_ecom_frontend
+npm install
+npm start
+
+---
+🙋‍♂️ Author
+
+Shravit
+Full Stack  Developer 🚀
+
+GitHub: https://github.com/shravit12
