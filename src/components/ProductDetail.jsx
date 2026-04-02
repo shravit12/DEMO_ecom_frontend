@@ -2,6 +2,34 @@ import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
 
+// Mock product list
+const productsList = [
+  {
+    id: "1",
+    title: "Stylish T-Shirt",
+    price: 499,
+    category: "clothing",
+    description: "A very comfortable and stylish t-shirt for daily wear.",
+    image: "https://via.placeholder.com/300x300?text=T-Shirt",
+  },
+  {
+    id: "2",
+    title: "Running Shoes",
+    price: 1499,
+    category: "footwear",
+    description: "Perfect shoes for running and sports activities.",
+    image: "https://via.placeholder.com/300x300?text=Shoes",
+  },
+  {
+    id: "3",
+    title: "Smart Watch",
+    price: 2999,
+    category: "electronics",
+    description: "Keep track of your health and notifications with style.",
+    image: "https://via.placeholder.com/300x300?text=Watch",
+  },
+];
+
 export default function ProductDetail() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -9,13 +37,17 @@ export default function ProductDetail() {
   const [added, setAdded] = useState(false);
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${id}`)
-      .then(res => res.json())
-      .then(data => setProduct(data));
+    // Find product in local list
+    const prod = productsList.find((p) => p.id === id);
+    setProduct(prod);
   }, [id]);
 
   if (!product)
-    return <div className="text-center mt-20 text-gray-600 animate-pulse">Loading...</div>;
+    return (
+      <div className="text-center mt-20 text-gray-600 animate-pulse">
+        Loading...
+      </div>
+    );
 
   const handleAddToCart = () => {
     addToCart(product);
@@ -25,7 +57,6 @@ export default function ProductDetail() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row gap-12">
-      
       {/* Product Image */}
       <div className="relative md:w-1/2 bg-white/50 backdrop-blur-md rounded-3xl p-6 flex items-center justify-center shadow-lg hover:shadow-2xl transition-shadow duration-500">
         <img
@@ -40,7 +71,7 @@ export default function ProductDetail() {
         <div className="space-y-4 animate-fadeIn">
           <h1 className="text-4xl font-extrabold text-gray-900">{product.title}</h1>
           <p className="text-purple-600 font-medium capitalize">{product.category}</p>
-          <p className="text-2xl font-bold text-gray-800">₹ {Math.round(product.price * 80)}</p>
+          <p className="text-2xl font-bold text-gray-800">₹ {product.price}</p>
           <p className="mt-4 text-gray-700 leading-relaxed">{product.description}</p>
         </div>
 
