@@ -45,7 +45,7 @@ export default function ProductDetail() {
   if (!product)
     return (
       <div className="text-center mt-20 text-gray-600 animate-pulse">
-        Loading...
+        Loading.
       </div>
     );
 
