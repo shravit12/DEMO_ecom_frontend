@@ -16,7 +16,7 @@ const mockProducts = [
     price: 499,
     category: "clothing",
     description: "A very comfortable and stylish t-shirt for daily wear.",
-    image: "https://via.placeholder.com/300x300?text=T-Shirt",
+    image: "https://images.pexels.com/photos/27078903/pexels-photo-27078903.jpeg",
   },
   {
     id: "2",
@@ -24,7 +24,7 @@ const mockProducts = [
     price: 1499,
     category: "footwear",
     description: "Perfect shoes for running and sports activities.",
-    image: "https://via.placeholder.com/300x300?text=Shoes",
+    image: "https://images.pexels.com/photos/18066208/pexels-photo-18066208.jpeg",
   },
   {
     id: "3",
@@ -32,7 +32,7 @@ const mockProducts = [
     price: 2999,
     category: "electronics",
     description: "Keep track of your health and notifications with style.",
-    image: "https://via.placeholder.com/300x300?text=Watch",
+    image: "https://images.pexels.com/photos/18662969/pexels-photo-18662969.jpeg",
   },
 ];
 
